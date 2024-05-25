@@ -1,53 +1,53 @@
 #include "faker-cxx/Computer.h"
 
-#include <string>
+#include <string_view>
 
-#include "data/ComputerData.h"
+#include "ComputerData.h"
 #include "faker-cxx/Helper.h"
 
 namespace faker
 {
-std::string Computer::type()
+std::string_view Computer::type()
 {
     return Helper::arrayElement(data::ComputerTypes);
 }
 
-std::string Computer::manufacture()
+std::string_view Computer::manufacture()
 {
     return Helper::arrayElement(data::ComputerManufactures);
 }
 
-std::string Computer::model()
+std::string_view Computer::model()
 {
     return Helper::arrayElement(data::ComputerModels);
 }
 
-std::string Computer::cpuManufacture()
+std::string_view Computer::cpuManufacture()
 {
     return Helper::arrayElement(data::ComputerCPUManufactures);
 }
 
-std::string Computer::cpuType()
+std::string_view Computer::cpuType()
 {
     return Helper::arrayElement(data::ComputerCPUTypes);
 }
 
-std::string Computer::cpuModel()
+std::string_view Computer::cpuModel()
 {
     return Helper::arrayElement(data::ComputerCPUModels);
 }
 
-std::string Computer::gpuManufacture()
+std::string_view Computer::gpuManufacture()
 {
     return Helper::arrayElement(data::ComputerGPUManufactures);
 }
 
-std::string Computer::gpuType()
+std::string_view Computer::gpuType()
 {
     return Helper::arrayElement(data::ComputerGPUTypes);
 }
 
-std::string Computer::gpuModel()
+std::string_view Computer::gpuModel()
 {
     return Helper::arrayElement(data::ComputerGPUModels);
 }

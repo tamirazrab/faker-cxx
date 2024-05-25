@@ -13,4 +13,3 @@ COPY scripts/ faker-cxx/scripts/
 
 RUN chmod 777 ./faker-cxx/scripts/run_tests_linux_gxx.sh
 
-ENTRYPOINT cd faker-cxx && ./scripts/run_tests_linux_gxx.sh
